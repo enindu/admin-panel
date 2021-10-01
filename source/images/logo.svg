@@ -1,0 +1,10 @@
+<svg width="26.458mm" height="26.458mm" version="1.1" viewBox="0 0 26.458 26.458"
+    xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(-95.526 -160.93)">
+        <rect x="95.526" y="160.93" width="26.458" height="26.458" rx="0" ry="0" fill="none" stroke-width=".265"/>
+        <g transform="matrix(.95676 0 0 .95676 -43.283 4.867)" stroke-width="1.0452">
+            <circle cx="158.91" cy="174.15" r="5.1899" fill="#b71c1c"/>
+            <path d="m158.91 163.12c-6.0596 1e-5 -11.027 4.9669-11.027 11.026v14.083a2.5446 2.5446 0 0 0 2.5446 2.5446 2.5446 2.5446 0 0 0 2.5446-2.5446 2.5446 2.5446 0 0 0 0-0.0124v-14.071c1.7e-4 -3.3091 2.6284-5.9372 5.9376-5.9372 3.3093 0 5.9369 2.6283 5.9369 5.9376 0 3.3093-2.6276 5.9371-5.9369 5.9371h-3.4e-4c-1.4053 0-2.5446 1.1392-2.5446 2.5446s1.1393 2.5446 2.5446 2.5446h3.4e-4c0.0202-4e-5 0.0403-3.4e-4 0.0605-8.5e-4 6.0322-0.033 10.966-4.986 10.966-11.025 0-6.0597-4.9664-11.027-11.026-11.027z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#f44336" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stop-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+        </g>
+    </g>
+</svg>
