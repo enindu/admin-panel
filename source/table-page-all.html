@@ -89,14 +89,14 @@
                 </a>
                 <h6 class="sidebar-title mt-20">Application</h6>
                 <div class="sidebar-divider"></div>
-                <a href="form-page.html" class="sidebar-link sidebar-link-with-icon active">
-                    <span class="sidebar-icon bg-primary text-white">
+                <a href="form-page.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
                         <i class="fa fa-pen"></i>
                     </span>
                     Form Page
                 </a>
-                <a href="table-page.html" class="sidebar-link sidebar-link-with-icon">
-                    <span class="sidebar-icon">
+                <a href="table-page.html" class="sidebar-link sidebar-link-with-icon active">
+                    <span class="sidebar-icon bg-primary text-white">
                         <i class="fa fa-table"></i>
                     </span>
                     Table Page
@@ -135,64 +135,12 @@
                     </div>
                 </div>
                 <div class="row row-eq-spacing">
-                    <div class="col-12 col-sm-6 col-lg-3 mb-20 mb-sm-0">
-                        <div class="card p-15">
-                            <h1 class="card-title">
-                                <i class="fa fa-plus mr-5"></i> Add Sample Data
-                            </h1>
-                            <form action="#" method="post" enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label for="title" class="required">Enter title</label>
-                                    <input type="text" name="title" id="title" class="form-control" placeholder="Title" maxlength="191" autocomplete="off" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subtitle">Enter subtitle</label>
-                                    <input type="text" name="subtitle" id="subtitle" class="form-control" placeholder="Subtitle" maxlength="191" autocomplete="off">
-                                </div>
-                                <div class="form-group">
-                                    <label for="content" class="required">Enter content</label>
-                                    <textarea name="content" id="content" class="form-control h-200" placeholder="Content" required></textarea>
-                                    <div class="form-text">
-                                        <small>Markdown is supported</small>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="image" class="required">Choose image</label>
-                                    <div class="custom-file">
-                                        <input type="file" name="image" id="image" accept=".jpg,.jpeg,.png,.webp" required>
-                                        <label for="image">Choose</label>
-                                    </div>
-                                    <div class="form-text">
-                                        <small>Allowed formats are JPG, PNG and WEBP</small><br>
-                                        <small>Minimum resolution is 670x420</small><br>
-                                        <small>Maximum size is 2MB</small>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="documents" class="required">Choose documents</label>
-                                    <div class="custom-file">
-                                        <input type="file" name="documents[]" id="documents" accept=".pdf" required>
-                                        <label for="documents">Choose</label>
-                                    </div>
-                                    <div class="form-text">
-                                        <small>Allowed format is PDF</small><br>
-                                        <small>Maximum size is 2MB</small>
-                                    </div>
-                                </div>
-                                <div class="text-right">
-                                    <button class="btn">
-                                        <i class="fa fa-plus mr-5"></i> Add
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-9">
+                    <div class="col-12">
                         <div class="card p-15">
                             <div class="row justify-content-start justify-content-sm-between align-items-center mb-20">
                                 <div class="col-12 col-lg-auto mb-10 mb-lg-0">
                                     <h1 class="card-title mb-0">
-                                        <i class="fa fa-redo mr-5"></i> Recent Sample Data
+                                        <i class="fa fa-database mr-5"></i> All Sample Data
                                     </h1>
                                 </div>
                                 <div class="col-12 col-lg-auto">
@@ -228,7 +176,7 @@
                                                 <div class="text-wrap">1</div>
                                             </td>
                                             <td>
-                                                <a href="form-page.html#sample-modal-1">
+                                                <a href="table-page-all.html#sample-modal-1">
                                                     <img src="images/sample-image.jpg" alt="sample image" class="img-fluid">
                                                 </a>
                                             </td>
@@ -255,7 +203,7 @@
                                                             <i class="fa fa-times"></i>
                                                         </button>
                                                     </form>
-                                                    <a href="form-page-single.html" class="btn btn-square mr-5">
+                                                    <a href="table-page-single.html" class="btn btn-square mr-5">
                                                         <i class="fa fa-wrench"></i>
                                                     </a>
                                                     <form action="#" method="post">
@@ -272,7 +220,7 @@
                                                 <div class="text-wrap">2</div>
                                             </td>
                                             <td>
-                                                <a href="form-page.html#sample-modal-2">
+                                                <a href="table-page-all.html#sample-modal-2">
                                                     <img src="images/sample-image.jpg" alt="sample image" class="img-fluid">
                                                 </a>
                                             </td>
@@ -299,7 +247,7 @@
                                                             <i class="fa fa-times"></i>
                                                         </button>
                                                     </form>
-                                                    <a href="form-page-single.html" class="btn btn-square mr-5">
+                                                    <a href="table-page-single.html" class="btn btn-square mr-5">
                                                         <i class="fa fa-wrench"></i>
                                                     </a>
                                                     <form action="#" method="post">
@@ -316,7 +264,7 @@
                                                 <div class="text-wrap">3</div>
                                             </td>
                                             <td>
-                                                <a href="form-page.html#sample-modal-3">
+                                                <a href="table-page-all.html#sample-modal-3">
                                                     <img src="images/sample-image.jpg" alt="sample image" class="img-fluid">
                                                 </a>
                                             </td>
@@ -343,7 +291,7 @@
                                                             <i class="fa fa-times"></i>
                                                         </button>
                                                     </form>
-                                                    <a href="form-page-single.html" class="btn btn-square mr-5">
+                                                    <a href="table-page-single.html" class="btn btn-square mr-5">
                                                         <i class="fa fa-wrench"></i>
                                                     </a>
                                                     <form action="#" method="post">
@@ -358,11 +306,29 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="text-left text-lg-right">
-                                <a href="form-page-all.html" class="btn w-full w-lg-auto">
-                                    Show All <i class="fa fa-angle-right ml-5"></i>
-                                </a>
-                            </div>
+                            <nav>
+                                <ul class="pagination text-center">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <i class="fa fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>

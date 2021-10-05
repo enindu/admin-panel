@@ -16,3 +16,8 @@ textarea {
 .file-names {
     word-wrap: break-word;
 }
+
+.table th,
+.table td {
+    padding: 0.8rem;
+}
