@@ -32,3 +32,13 @@ You can build the production bundle by running `npm run build` command. Producti
 ```
 $ npm run build
 ```
+
+## Screeshots
+
+Here are some screenshots of the template pages.
+
+![Homepage](https://github.com/phyxle/admin-panel/raw/master/screenshots/home.png "Screenshot of Homepage")
+
+![Login page](https://github.com/phyxle/admin-panel/raw/master/screenshots/login.png "Screenshot of Login Page")
+
+![Form page](https://github.com/phyxle/admin-panel/raw/master/screenshots/form.png "Screenshot of Form Page")
