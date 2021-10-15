@@ -13,7 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const sidebar = document.getElementById("sidebar");
     if(sidebar != null) {
-        sidebar.addEventListener("click", () => {
+        sidebar.addEventListener("click", (event) => {
+            event.preventDefault();
             halfmoon.toggleSidebar();
         });
     }
