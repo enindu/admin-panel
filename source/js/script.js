@@ -3,6 +3,13 @@ import halfmoon from "~/node_modules/halfmoon/js/halfmoon-module.js";
 window.addEventListener("DOMContentLoaded", () => {
     halfmoon.onDOMContentLoaded();
 
+    const version = document.querySelectorAll(".version");
+    if(version.length > 0) {
+        version.forEach((element) => {
+            element.innerText = "0.1.2-dev";
+        });
+    }
+
     const back = document.getElementById("back");
     if(back != null) {
         back.addEventListener("click", (event) => {
