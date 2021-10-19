@@ -3,10 +3,10 @@ import halfmoon from "~/node_modules/halfmoon/js/halfmoon-module.js";
 window.addEventListener("DOMContentLoaded", () => {
     halfmoon.onDOMContentLoaded();
 
-    const version = document.querySelectorAll(".version");
-    if(version.length > 0) {
-        version.forEach((element) => {
-            element.innerText = "0.1.3-dev";
+    const versions = document.querySelectorAll(".version");
+    if(versions.length > 0) {
+        versions.forEach((version) => {
+            version.innerText = "0.1.3-dev";
         });
     }
 
