@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const versions = document.querySelectorAll(".version");
     if(versions.length > 0) {
         versions.forEach((version) => {
-            version.innerText = "0.1.3";
+            version.innerText = "0.1.4-dev";
         });
     }
 
