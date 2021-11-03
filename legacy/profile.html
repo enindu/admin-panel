@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/halfmoon/css/halfmoon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode with-custom-css-scrollbars with-custom-webkit-scrollbars">
+    <!-- Page wrapper -->
+    <div class="page-wrapper with-navbar with-sidebar">
+
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="navbar-content">
+                <button id="sidebar" class="btn btn-square">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo-1.svg" alt="logo" width="30" height="30"> Admin Panel
+            </a>
+            <span class="navbar-text">
+                <span class="version"></span>
+            </span>
+        </div>
+        <!-- End navigation bar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h6 class="sidebar-title">Dashboard</h6>
+                <div class="sidebar-divider"></div>
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-home"></i>
+                    </span>
+                    Home
+                </a>
+                <a href="profile.html" class="sidebar-link sidebar-link-with-icon active">
+                    <span class="sidebar-icon bg-primary text-white">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    Profile
+                </a>
+                <a href="login.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-sign-in-alt"></i>
+                    </span>
+                    Login
+                </a>
+                <a href="logout.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-sign-out-alt"></i>
+                    </span>
+                    Logout
+                </a>
+                <h6 class="sidebar-title mt-20">Application</h6>
+                <div class="sidebar-divider"></div>
+                <a href="form-page.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-pen"></i>
+                    </span>
+                    Form Page
+                </a>
+                <a href="table-page.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-table"></i>
+                    </span>
+                    Table Page
+                </a>
+                <h6 class="sidebar-title mt-20">External Links</h6>
+                <div class="sidebar-divider"></div>
+                <a href="#" target="_blank" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-danger text-white">
+                        <i class="fa fa-globe"></i>
+                    </span>
+                    Website
+                </a>
+                <a href="https://phyxle.com" target="_blank" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-danger text-white">
+                        <i class="fa fa-globe"></i>
+                    </span>
+                    Phyxle
+                </a>
+            </div>
+        </div>
+        <!-- End sidebar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row row-eq-spacing align-items-center">
+                    <div class="col-12 col-sm-auto mb-20 mb-sm-0">
+                        <button id="back" class="btn">
+                            <i class="fa fa-chevron-left mr-5"></i> Back
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <h4 class="my-0">
+                            <i class="fa fa-user mr-5"></i> Profile
+                        </h4>
+                    </div>
+                </div>
+                <div class="row row-eq-spacing">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card p-15">
+                            <h1 class="card-title">
+                                <i class="fa fa-check mr-5"></i> Edit Password
+                            </h1>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="new-password" class="required">Enter new password</label>
+                                    <input type="password" name="new-password" id="new-password" class="form-control" placeholder="New Password" minlength="6" maxlength="32" autocomplete="off" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-new-password" class="required">Confirm new password</label>
+                                    <input type="password" name="confirm-new-password" id="confirm-new-password" class="form-control" placeholder="Confirm New Password" minlength="6" maxlength="32" autocomplete="off" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="current-password" class="required">Enter current password</label>
+                                    <input type="password" name="current-password" id="current-password" class="form-control" placeholder="Current Password" minlength="6" maxlength="32" autocomplete="off" required>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn">
+                                        <i class="fa fa-check mr-5"></i> Edit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End content wrapper -->
+
+    </div>
+    <!-- End page wrapper -->
+
+    <script src="../node_modules/halfmoon/js/halfmoon.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+html {
+    font-size: 55%;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace !important;
+}
+
+textarea {
+    resize: none;
+}
+
+.file-names {
+    word-wrap: break-word;
+}
+
+.table th,
+.table td {
+    padding: 0.8rem;
+}

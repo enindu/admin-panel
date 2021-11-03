@@ -17,6 +17,8 @@ $ cd phyxle-admin-panel/
 $ npm install
 ```
 
+**Note:** You can find the legecy version at `legacy` directory. Legacy version is built without Parcel bundler.
+
 ## Start
 
 You can start the development server by running `npm run start` command. After that go to [http://localhost:1234](http://localhost:1234) to see the template.
