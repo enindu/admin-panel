@@ -7,7 +7,7 @@ Admin panel template based on Halfmoon framework
 You can download the template by cloning this repository.
 
 ```
-$ git clone https://github.com/phyxle/phyxle-admin-panel.git
+$ git clone https://github.com/phyxle/admin-panel.git
 ```
 
 ## SCREENSHOTS
