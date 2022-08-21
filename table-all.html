@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/halfmoon/css/halfmoon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode with-custom-css-scrollbars with-custom-webkit-scrollbars">
+    <!-- Page wrapper -->
+    <div class="page-wrapper with-navbar with-sidebar">
+
+        <!-- Modals -->
+        <div id="sample-modal-1" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-content-media w-600">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/item.jpg" alt="item" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sample-modal-2" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-content-media w-600">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/item.jpg" alt="item" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sample-modal-3" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-content-media w-600">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/item.jpg" alt="item" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modals -->
+
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="navbar-content">
+                <button id="sidebar" class="btn btn-square">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <a href="index.html" class="navbar-brand">
+                <img src="images/icon.svg" alt="icon" width="30" height="30"> Admin Panel
+            </a>
+            <span class="navbar-text">
+                <span class="version"></span>
+            </span>
+        </div>
+        <!-- End navigation bar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h6 class="sidebar-title">Dashboard</h6>
+                <div class="sidebar-divider"></div>
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa-solid fa-home"></i>
+                    </span>
+                    Home
+                </a>
+                <a href="profile.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    Profile
+                </a>
+                <a href="login.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa-solid fa-sign-in-alt"></i>
+                    </span>
+                    Login
+                </a>
+                <a href="logout.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa-solid fa-sign-out-alt"></i>
+                    </span>
+                    Logout
+                </a>
+                <h6 class="sidebar-title mt-20">Application</h6>
+                <div class="sidebar-divider"></div>
+                <a href="form.html" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </span>
+                    Form
+                </a>
+                <a href="table.html" class="sidebar-link sidebar-link-with-icon active">
+                    <span class="sidebar-icon bg-primary text-white">
+                        <i class="fa-solid fa-pen"></i>
+                    </span>
+                    Table
+                </a>
+                <h6 class="sidebar-title mt-20">External Links</h6>
+                <div class="sidebar-divider"></div>
+                <a href="#" target="_blank" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-danger text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </span>
+                    Website
+                </a>
+                <a href="https://phyxle.com" target="_blank" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-danger text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </span>
+                    Phyxle
+                </a>
+            </div>
+        </div>
+        <!-- End sidebar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row row-eq-spacing align-items-center">
+                    <div class="col-12 col-sm-auto mb-20 mb-sm-0">
+                        <button id="back" class="btn">
+                            <i class="fa-solid fa-chevron-left mr-5"></i> Back
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <h4 class="my-0">
+                            <i class="fa-solid fa-pen mr-5"></i> Items
+                        </h4>
+                    </div>
+                </div>
+                <div class="row row-eq-spacing">
+                    <div class="col-12">
+                        <div class="card p-15">
+                            <div class="row justify-content-start justify-content-sm-between align-items-center mb-20">
+                                <div class="col-12 col-lg-auto mb-10 mb-lg-0">
+                                    <h1 class="card-title mb-0">
+                                        <i class="fa-solid fa-database mr-5"></i> All Items
+                                    </h1>
+                                </div>
+                                <div class="col-12 col-lg-auto">
+                                    <div class="d-block d-lg-flex">
+                                        <form action="#" method="post">
+                                            <button class="btn w-full w-lg-auto mr-0 mr-lg-5 mb-5 mb-lg-0">
+                                                <i class="fa-solid fa-download mr-5"></i> Download
+                                            </button>
+                                        </form>
+                                        <form action="#" method="post">
+                                            <button class="btn btn-danger w-full w-lg-auto">
+                                                <i class="fa-solid fa-trash-alt mr-5"></i> Remove
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive mb-20">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="w-25">ID</th>
+                                            <th class="w-25">Thumbnail</th>
+                                            <th class="w-25">Status</th>
+                                            <th>Title</th>
+                                            <th>Content</th>
+                                            <th class="w-25"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="text-wrap">1</div>
+                                            </td>
+                                            <td>
+                                                <a href="table-all.html#sample-modal-1">
+                                                    <img src="images/item.jpg" alt="item" class="img-fluid">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <span class="badge">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="text-wrap">Item 1</div>
+                                            </td>
+                                            <td>
+                                                <div class="text-wrap">Culpa voluptate tempor amet minim ipsum excepteur officia sunt laborum proident. Incididunt veniam nisi ipsum amet amet irure voluptate cillum elit. Id aute aute irure cupidatat voluptate elit ut duis est Lorem minim. Mollit commodo aliquip dolore elit est dolore nulla qui minim fugiat. Esse duis eiusmod aute eiusmod esse dolor excepteur enim amet.</div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-end">
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-primary btn-square mr-5">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </button>
+                                                    </form>
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-danger btn-square mr-5">
+                                                            <i class="fa-solid fa-times"></i>
+                                                        </button>
+                                                    </form>
+                                                    <a href="table-single.html" class="btn btn-square mr-5">
+                                                        <i class="fa-solid fa-wrench"></i>
+                                                    </a>
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-danger btn-square">
+                                                            <i class="fa-solid fa-trash-alt"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="text-wrap">2</div>
+                                            </td>
+                                            <td>
+                                                <a href="table-all.html#sample-modal-2">
+                                                    <img src="images/item.jpg" alt="item" class="img-fluid">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-primary">Approved</span>
+                                            </td>
+                                            <td>
+                                                <div class="text-wrap">Item 2</div>
+                                            </td>
+                                            <td>
+                                                <div class="text-wrap">Culpa voluptate tempor amet minim ipsum excepteur officia sunt laborum proident. Incididunt veniam nisi ipsum amet amet irure voluptate cillum elit. Id aute aute irure cupidatat voluptate elit ut duis est Lorem minim. Mollit commodo aliquip dolore elit est dolore nulla qui minim fugiat. Esse duis eiusmod aute eiusmod esse dolor excepteur enim amet.</div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-end">
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-primary btn-square mr-5" disabled>
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </button>
+                                                    </form>
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-danger btn-square mr-5">
+                                                            <i class="fa-solid fa-times"></i>
+                                                        </button>
+                                                    </form>
+                                                    <a href="table-single.html" class="btn btn-square mr-5">
+                                                        <i class="fa-solid fa-wrench"></i>
+                                                    </a>
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-danger btn-square">
+                                                            <i class="fa-solid fa-trash-alt"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="text-wrap">3</div>
+                                            </td>
+                                            <td>
+                                                <a href="table-all.html#sample-modal-3">
+                                                    <img src="images/item.jpg" alt="item" class="img-fluid">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger">Rejected</span>
+                                            </td>
+                                            <td>
+                                                <div class="text-wrap">Item 3</div>
+                                            </td>
+                                            <td>
+                                                <div class="text-wrap">Culpa voluptate tempor amet minim ipsum excepteur officia sunt laborum proident. Incididunt veniam nisi ipsum amet amet irure voluptate cillum elit. Id aute aute irure cupidatat voluptate elit ut duis est Lorem minim. Mollit commodo aliquip dolore elit est dolore nulla qui minim fugiat. Esse duis eiusmod aute eiusmod esse dolor excepteur enim amet.</div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-end">
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-primary btn-square mr-5">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </button>
+                                                    </form>
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-danger btn-square mr-5" disabled>
+                                                            <i class="fa-solid fa-times"></i>
+                                                        </button>
+                                                    </form>
+                                                    <a href="table-single.html" class="btn btn-square mr-5">
+                                                        <i class="fa-solid fa-wrench"></i>
+                                                    </a>
+                                                    <form action="#" method="post">
+                                                        <button class="btn btn-danger btn-square">
+                                                            <i class="fa-solid fa-trash-alt"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <nav>
+                                <ul class="pagination text-center">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End content wrapper -->
+
+    </div>
+    <!-- End page wrapper -->
+    <script src="node_modules/halfmoon/js/halfmoon.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
