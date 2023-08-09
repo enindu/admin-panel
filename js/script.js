@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
             version.innerText = '0.2.2-dev';
         });
     }
-
     const back = document.getElementById('back');
     if (back != null) {
         back.addEventListener('click', (event) => {
@@ -13,7 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
             window.history.go(-1);
         });
     }
-
     const sidebar = document.getElementById('sidebar');
     if (sidebar != null) {
         sidebar.addEventListener('click', (event) => {
