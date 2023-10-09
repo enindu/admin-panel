@@ -1,20 +1,20 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const versions = document.querySelectorAll('.version');
+window.addEventListener("DOMContentLoaded", () => {
+    const versions = document.querySelectorAll(".version");
     if (versions.length > 0) {
         versions.forEach((version) => {
-            version.innerText = '0.2.2';
+            version.innerText = "0.3.0-dev";
         });
     }
-    const back = document.getElementById('back');
+    const back = document.getElementById("back");
     if (back != null) {
-        back.addEventListener('click', (event) => {
+        back.addEventListener("click", (event) => {
             event.preventDefault();
             window.history.go(-1);
         });
     }
-    const sidebar = document.getElementById('sidebar');
+    const sidebar = document.getElementById("sidebar");
     if (sidebar != null) {
-        sidebar.addEventListener('click', (event) => {
+        sidebar.addEventListener("click", (event) => {
             event.preventDefault();
             halfmoon.toggleSidebar();
         });
