@@ -1,61 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark" data-bs-core="default">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/halfmoon/css/halfmoon.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dark-mode with-custom-css-scrollbars with-custom-webkit-scrollbars">
-    <!-- Page wrapper -->
-    <div class="page-wrapper">
-        <!-- Content wrapper -->
-        <div class="content-wrapper">
-            <div class="container h-full">
-                <div class="row justify-content-center align-items-center h-full">
-                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                        <div class="text-center">
-                            <img src="images/logo.svg" alt="logo" width="150">
-                        </div>
-                        <div class="card p-15">
-                            <h1 class="card-title">
-                                <i class="fa-solid fa-sign-in-alt mr-5"></i> Login
-                            </h1>
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label for="email" class="required">Enter email address</label>
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" maxlength="255" autocomplete="off" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="required">Enter password</label>
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" minlength="8" maxlength="32" autocomplete="off" required>
-                                </div>
-                                <div class="text-right">
-                                    <button class="btn">
-                                        <i class="fa-solid fa-sign-in-alt mr-5"></i> Login
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="text-center">
-                            <span>&copy; 2022 <a href="index.html" class="text-light">Phyxle</a>.</span><br>
-                            <span>Designed By <a href="https://phyxle.com" target="_blank" class="text-light">Phyxle</a>.</span><br>
-                            <small>Current version: <span class="version"></span></small>
-                        </div>
+
+<body>
+    <!-- Content -->
+    <div class="container vh-100">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+                <div class="text-center mb-5">
+                    <img src="images/logo.svg" alt="logo" width="150">
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fa-solid fa-sign-in-alt"></i> Login
+                        </h5>
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Enter email address <span class="text-danger">*</span></label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email Address" maxlength="255" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Enter password <span class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Password" minlength="8" maxlength="32" autocomplete="off" required>
+                            </div>
+                            <div class="text-end">
+                                <button class="btn btn-secondary">
+                                    <i class="fa-solid fa-sign-in-alt"></i> Login
+                                </button>
+                            </div>
+                        </form>
                     </div>
+                </div>
+                <div class="text-center">
+                    &copy; 2023 <a href="index.html">Phyxle</a> <br>
+                    Designed By <a href="https://phyxle.com" target="_blank">Phyxle</a> <br>
+                    <span class="version"></span>
                 </div>
             </div>
         </div>
-        <!-- End content wrapper -->
     </div>
-    <!-- End page wrapper -->
-    <script src="node_modules/halfmoon/js/halfmoon.min.js"></script>
+    <!-- End content -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

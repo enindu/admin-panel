@@ -12,11 +12,4 @@ window.addEventListener("DOMContentLoaded", () => {
             window.history.go(-1);
         });
     }
-    const sidebar = document.getElementById("sidebar");
-    if (sidebar != null) {
-        sidebar.addEventListener("click", (event) => {
-            event.preventDefault();
-            halfmoon.toggleSidebar();
-        });
-    }
 });

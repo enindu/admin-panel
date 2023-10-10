@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-core="default">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/halfmoon/css/halfmoon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="ps-xxl-sbwidth">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-xxl bg-body-tertiary border-bottom border-opacity-25 d-flex d-xxl-none">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/icon.svg" alt="icon" width="24" height="24"> Admin Panel
+            </a>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- End navigation bar -->
+    <!-- Sidebar -->
+    <nav class="sidebar offcanvas-start offcanvas-xxl" id="sidebar" tabindex="-1">
+        <div class="offcanvas-header bg-body-tertiary border-bottom border-opacity-25 d-none d-xxl-flex">
+            <a class="sidebar-brand" href="index.html">
+                <img src="images/icon.svg" alt="icon" width="24" height="24"> Admin Panel
+            </a>
+            <small>
+                <span class="version"></span>
+            </small>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sidebar-nav">
+                <li>
+                    <h6 class="sidebar-header text-uppercase">Dashboard</h6>
+                </li>
+                <li>
+                    <hr class="sidebar-divider">
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="logout.html" class="nav-link">Logout</a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="sidebar-header text-uppercase">Application</h6>
+                </li>
+                <li>
+                    <hr class="sidebar-divider">
+                </li>
+                <li class="nav-item">
+                    <a href="items.html" class="nav-link active" aria-current="page">Items</a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="sidebar-header text-uppercase">External Links</h6>
+                </li>
+                <li>
+                    <hr class="sidebar-divider">
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Website</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://phyxle.com" class="nav-link" target="_blank">Phyxle</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End sidebar -->
+    <!-- Modals -->
+    <div class="modal fade" id="test-modal-1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="images/item.jpg" alt="item" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="test-modal-2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="images/item.jpg" alt="item" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="test-modal-3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="images/item.jpg" alt="item" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- End modals -->
+    <!-- Content -->
+    <div class="container-fluid my-3">
+        <div class="row align-items-center mb-3">
+            <div class="col-12 col-sm-auto mb-3 mb-sm-0">
+                <button class="btn btn-secondary" id="back">
+                    <i class="fa-solid fa-angle-left"></i> Back
+                </button>
+            </div>
+            <div class="col-12 col-sm-auto">
+                <h5 class="mb-0">
+                    <i class="fa-solid fa-pen"></i> Items
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fa-solid fa-plus"></i> Create Item
+                        </h5>
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Enter title <span class="text-danger">*</span></label>
+                                <input type="text" name="title" class="form-control" id="title" placeholder="Title" maxlength="255" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subtitle" class="form-label">Enter subtitle</label>
+                                <input type="text" name="subtitle" class="form-control" id="subtitle" placeholder="Subtitle" maxlength="255" autocomplete="off">
+                            </div>
+                            <div class="mb-3">
+                                <label for="content" class="form-label">Enter content <span class="text-danger">*</span></label>
+                                <textarea name="content" class="form-control specific-h-100" id="content" placeholder="Content" aria-labelledby="content-form-text" required></textarea>
+                                <div class="form-text" id="content-form-text">Markdown is supported</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="image" class="form-label">Choose image <span class="text-danger">*</span></label>
+                                <input type="file" name="image" class="form-control" id="image" accept=".jpg,.jpeg,.png,.webp" aria-labelledby="image-form-text" required>
+                                <div class="form-text" id="image-form-text">
+                                    Allowed formats are JPG, PNG and WEBP <br>
+                                    Allowed resolution is 670x420 <br>
+                                    Maximum size is 1MB
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="documents" class="form-label">Choose documents <span class="text-danger">*</span></label>
+                                <input type="file" name="documents[]" class="form-control" id="documents" accept=".pdf" aria-labelledby="documents-form-text" multiple required>
+                                <div class="form-text" id="documents-form-text">
+                                    Allowed format is PDF <br>
+                                    Maximum size is 1MB
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <button class="btn btn-secondary">
+                                    <i class="fa-solid fa-plus"></i> Create
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row justify-content-start justify-content-sm-between align-items-center mb-3">
+                            <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+                                <h5 class="card-title mb-0">
+                                    <i class="fa-solid fa-redo"></i> Recent Items
+                                </h5>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <div class="d-block d-lg-flex gap-2">
+                                    <form action="#" method="post" class="mb-2 mb-lg-0">
+                                        <button class="btn btn-secondary w-100 w-lg-auto">
+                                            <i class="fa-solid fa-download"></i> Download
+                                        </button>
+                                    </form>
+                                    <form action="#" method="post">
+                                        <button class="btn btn-danger w-100 w-lg-auto">
+                                            <i class="fa-solid fa-trash-alt"></i> Remove
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive mb-3">
+                            <table class="table table-bordered mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="specific-w-25">ID</th>
+                                        <th class="specific-w-25">Thumbnail</th>
+                                        <th class="specific-w-25">Status</th>
+                                        <th>Title</th>
+                                        <th>Content</th>
+                                        <th class="specific-w-25"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="text-wrap">1</div>
+                                        </td>
+                                        <td>
+                                            <a href="items.html#test-modal-1" role="button" data-bs-toggle="modal">
+                                                <img src="images/item.jpg" alt="item" class="img-fluid">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span class="badge text-bg-warning">Pending</span>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">Item 1</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">Culpa voluptate tempor amet minim ipsum excepteur officia sunt laborum proident. Incididunt veniam nisi ipsum amet amet irure voluptate cillum elit. Id aute aute irure cupidatat voluptate elit ut duis est Lorem minim. Mollit commodo aliquip dolore elit est dolore nulla qui minim fugiat. Esse duis eiusmod aute eiusmod esse dolor excepteur enim amet.</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end gap-1">
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </button>
+                                                </form>
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa-solid fa-times"></i>
+                                                    </button>
+                                                </form>
+                                                <a href="items-single.html" class="btn btn-secondary">
+                                                    <i class="fa-solid fa-wrench"></i>
+                                                </a>
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa-solid fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-wrap">2</div>
+                                        </td>
+                                        <td>
+                                            <a href="items.html#test-modal-2" role="button" data-bs-toggle="modal">
+                                                <img src="images/item.jpg" alt="item" class="img-fluid">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span class="badge text-bg-primary">Approved</span>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">Item 2</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">Culpa voluptate tempor amet minim ipsum excepteur officia sunt laborum proident. Incididunt veniam nisi ipsum amet amet irure voluptate cillum elit. Id aute aute irure cupidatat voluptate elit ut duis est Lorem minim. Mollit commodo aliquip dolore elit est dolore nulla qui minim fugiat. Esse duis eiusmod aute eiusmod esse dolor excepteur enim amet.</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end gap-1">
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-primary" disabled>
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </button>
+                                                </form>
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa-solid fa-times"></i>
+                                                    </button>
+                                                </form>
+                                                <a href="items-single.html" class="btn btn-secondary">
+                                                    <i class="fa-solid fa-wrench"></i>
+                                                </a>
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa-solid fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-wrap">3</div>
+                                        </td>
+                                        <td>
+                                            <a href="items.html#test-modal-3" role="button" data-bs-toggle="modal">
+                                                <img src="images/item.jpg" alt="item" class="img-fluid">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span class="badge text-bg-danger">Rejected</span>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">Item 3</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-wrap">Culpa voluptate tempor amet minim ipsum excepteur officia sunt laborum proident. Incididunt veniam nisi ipsum amet amet irure voluptate cillum elit. Id aute aute irure cupidatat voluptate elit ut duis est Lorem minim. Mollit commodo aliquip dolore elit est dolore nulla qui minim fugiat. Esse duis eiusmod aute eiusmod esse dolor excepteur enim amet.</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end gap-1">
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </button>
+                                                </form>
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-danger" disabled>
+                                                        <i class="fa-solid fa-times"></i>
+                                                    </button>
+                                                </form>
+                                                <a href="items-single.html" class="btn btn-secondary">
+                                                    <i class="fa-solid fa-wrench"></i>
+                                                </a>
+                                                <form action="#" method="post">
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa-solid fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-start text-lg-end">
+                            <a href="items-all.html" class="btn btn-secondary w-100 w-lg-auto">
+                                Show All <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End content -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
