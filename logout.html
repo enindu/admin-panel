@@ -15,7 +15,6 @@
 </head>
 
 <body class="ps-xxl-sbwidth">
-    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-xxl bg-body-tertiary border-bottom border-opacity-25 d-flex d-xxl-none">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
@@ -26,8 +25,6 @@
             </button>
         </div>
     </nav>
-    <!-- End navigation bar -->
-    <!-- Sidebar -->
     <nav class="sidebar offcanvas-start offcanvas-xxl" id="sidebar" tabindex="-1">
         <div class="offcanvas-header bg-body-tertiary border-bottom border-opacity-25">
             <a class="sidebar-brand" href="index.html">
@@ -81,8 +78,6 @@
             </ul>
         </div>
     </nav>
-    <!-- End sidebar -->
-    <!-- Content -->
     <div class="container vh-100">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-12 col-sm-3">
@@ -92,7 +87,9 @@
                             <i class="fa-solid fa-sign-out-alt"></i> Logout
                         </h5>
                         <form action="#" method="post">
-                            <div class="text-center mb-3">Are you sure, you want to logout?</div>
+                            <div class="text-center mb-3">
+                                <p class="mb-0">Are you sure, you want to logout?</p>
+                            </div>
                             <div class="text-center">
                                 <button id="back" class="btn btn-secondary me-2">
                                     <i class="fa-solid fa-times"></i> Cancel
@@ -107,7 +104,6 @@
             </div>
         </div>
     </div>
-    <!-- End content -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

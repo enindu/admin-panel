@@ -15,7 +15,6 @@
 </head>
 
 <body class="ps-xxl-sbwidth">
-    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-xxl bg-body-tertiary border-bottom border-opacity-25 d-flex d-xxl-none">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
@@ -26,8 +25,6 @@
             </button>
         </div>
     </nav>
-    <!-- End navigation bar -->
-    <!-- Sidebar -->
     <nav class="sidebar offcanvas-start offcanvas-xxl" id="sidebar" tabindex="-1">
         <div class="offcanvas-header bg-body-tertiary border-bottom border-opacity-25">
             <a class="sidebar-brand" href="index.html">
@@ -81,8 +78,6 @@
             </ul>
         </div>
     </nav>
-    <!-- End sidebar -->
-    <!-- Modals -->
     <div class="modal fade" id="test-modal-1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -104,8 +99,6 @@
             </div>
         </div>
     </div>
-    <!-- End modals -->
-    <!-- Content -->
     <div class="container-fluid my-3">
         <div class="row align-items-center mb-3">
             <div class="col-auto">
@@ -138,23 +131,25 @@
                             <div class="mb-3">
                                 <label for="content" class="form-label">Enter content <span class="text-danger">*</span></label>
                                 <textarea name="content" class="form-control specific-h-200" id="content" placeholder="Content" aria-labelledby="content-form-text" required></textarea>
-                                <div class="form-text" id="content-form-text">Markdown is supported</div>
+                                <div class="form-text" id="content-form-text">
+                                    <p class="mb-0">Markdown is supported</p>
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="image" class="form-label">Choose image <span class="text-danger">*</span></label>
                                 <input type="file" name="image" class="form-control" id="image" accept=".jpg,.jpeg,.png,.webp" aria-labelledby="image-form-text" required>
                                 <div class="form-text" id="image-form-text">
-                                    Allowed formats are JPG, PNG and WEBP <br>
-                                    Allowed resolution is 670x420 <br>
-                                    Maximum size is 1MB
+                                    <p class="mb-0">Allowed formats are JPG, PNG and WEBP</p>
+                                    <p class="mb-0">Allowed resolution is 670x420</p>
+                                    <p class="mb-0">Maximum size is 1MB</p>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="documents" class="form-label">Choose documents <span class="text-danger">*</span></label>
                                 <input type="file" name="documents[]" class="form-control" id="documents" accept=".pdf" aria-labelledby="documents-form-text" multiple required>
                                 <div class="form-text" id="documents-form-text">
-                                    Allowed format is PDF <br>
-                                    Maximum size is 1MB
+                                    <p class="mb-0">Allowed format is PDF</p>
+                                    <p class="mb-0">Maximum size is 1MB</p>
                                 </div>
                             </div>
                             <div class="text-end">
@@ -321,7 +316,6 @@
             </div>
         </div>
     </div>
-    <!-- End content -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
