@@ -14,8 +14,8 @@ $ git clone https://github.com/phyxle/admin-panel.git
 
 Here are some screenshots of the template pages.
 
-![Homepage](https://github.com/phyxle/admin-panel/raw/master/screenshots/index.png "Screenshot of Homepage")
+![Homepage](https://github.com/phyxle/admin-panel/raw/master/screenshots/index.png "Screenshot of homepage")
 
-![Login page](https://github.com/phyxle/admin-panel/raw/master/screenshots/login.png "Screenshot of Login Page")
+![Login page](https://github.com/phyxle/admin-panel/raw/master/screenshots/login.png "Screenshot of login Page")
 
-![Form page](https://github.com/phyxle/admin-panel/raw/master/screenshots/form.png "Screenshot of Form Page")
+![Items page](https://github.com/phyxle/admin-panel/raw/master/screenshots/items.png "Screenshot of items Page")
